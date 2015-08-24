@@ -1,24 +1,24 @@
 html{
 	margin: 50px;
+
+}
+
+.thumbnail {
 	
 }
-.navbar-header {
-	background-color: yellow; 
-
-}
-
 .jumbotron {
 	background-color: pink; 
 }
+
 
 #navbar {
 	background-color: lightblue;
 	color: gray; 
 }
 
-iframe {
-	height: 250px; 
-}
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
