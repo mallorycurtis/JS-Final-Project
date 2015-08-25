@@ -1,22 +1,24 @@
-html{
-	margin: 50px;
-
-}
-
-.thumbnail {
-	
-}
-.jumbotron {
-	background-color: pink; 
-}
-
-
 #navbar {
-	background-color: lightblue;
-	color: gray; 
+	color: #5e5656;
+	background-color: #5e5656 ; 
+	opacity: .5; 
 }
 
+.cover-heading  {
+	  text-align: center;
+}
 
+.lead {
+	  text-align: center;
+}
+
+p {
+ color:gray; 
+}
+
+.cover-heading {
+	font-size: 56px; 
+}
 
 
 /* ==========================================================================

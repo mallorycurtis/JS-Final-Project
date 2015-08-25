@@ -11,90 +11,96 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+ 		<link rel="stylesheet" href="css/cover.css" >
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-		<h1>
-			About Madison's Bakery
-		</h1>
+		<div class="collapse navbar-collapse navbar-fixed-top" id="bs-example-navbar-collapse-1 navbar-fixed-top">
+		  <div class="container-fluid" id="navbar">
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+			<li class="active"><a href="about.html">About<span class="sr-only">(current)</span></a></li>
+			<li class="active"><a href="products.html">Products <span class="sr-only">(current)</span></a></li>
+		  </ul>
+		</div>
+		</div>
+		<fieldset>
+			<legend>About Madison's Bakery</legend>
 		<p>
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		</p>
 		<p>
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		</p>
+		</fieldset>
 		<br>
-		<h3>
-			Contact Me
-		</h3>
-		<br>
-		<form name="htmlform" method="post" action="action_page.php">
-			<table width="450px">
-			</tr>
-			<tr>
-			 <td valign="top">
-			  <label for="first_name">First Name *</label>
-			 </td>
-			 <td valign="top">
-			  <input  type="text" name="first_name" maxlength="50" size="30">
-			 </td>
-			</tr>
-
-			<tr>
-			 <td valign="top">
-			  <label for="last_name">Last Name *</label>
-			 </td>
-			 <td valign="top">
-			  <input  type="text" name="last_name" maxlength="50" size="30">
-			 </td>
-			</tr>
-			<tr>
-			 <td valign="top">
-			  <label for="email">Email Address *</label>
-			 </td>
-			 <td valign="top">
-			  <input  type="text" name="email" maxlength="80" size="30">
-			 </td>
-
-			</tr>
-			<tr>
-			 <td valign="top">
-			  <label for="telephone">Telephone Number</label>
-			 </td>
-			 <td valign="top">
-			  <input  type="text" name="telephone" maxlength="30" size="30">
-			 </td>
-			</tr>
-			<tr>
-			 <td valign="top">
-			  <label for="comments">Comments *</label>
-			 </td>
-			 <td valign="top">
-			  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-			 </td>
-
-			</tr>
-			<tr>
-			 <td colspan="2" style="text-align:center">
-			  <input type="submit" value="Submit"> 
-			 </td>
-			</tr>
-			</table>
-			</form>
+	 <fieldset>
+          <legend>Contact Me</legend>
+	<div class="container">
+      <form class="form-horizontal" role="form" action="action_page.php" method="get" id="order-form">
+       
+          <div class="form-group required">
+            <label class="col-sm-3 control-label" for="your-name">Name</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="your-name" id="your-name" required placeholder="Your Name" required>
+            </div>
+          </div>
+          <div class="form-group required">
+            <label class="col-sm-3 control-label" for="your-email">Email</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="your-email" id="your-email" required placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="your-phone">Phone Number</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="your-phone" id="your-phone" placeholder="Your phone number">
+            </div>
+          </div>
+          <div class="form-group required">
+            <label class="col-sm-3 control-label" for="your-city">Question/Comment</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="your-input" id="your-input" required placeholder="What would you like me to know?" required>
+            </div>
+          </div>
+         <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+       
+      </form>
+    </div>
+		  </fieldset>
+		<fieldset>
+			<legend>
+				Visit
+			</legend>
+			 <div class="container">
+			<div class="row">
+			  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				  <div class="thumbnail">
+					  <div class="map">
+						<iframe frameBorder='0' src='https://a.tiles.mapbox.com/v4/malcurts.n80m1l9p/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibWFsY3VydHMiLCJhIjoiOTAwMDk1MTRkMTExMzEzZDdkNDNhNmM5OTc0NGU4ZTEifQ.UbhdUUbQvT7UL4cSydnT1w'></iframe>					  </div>
+					</div>
+			  </div>
+		</div>
+		</div>
+		</fieldset>
+   
+		
+	   <div class="mastfoot">
+            <div class="inner">
+              <p>Mallory Curtis - 2015 </p>
+            </div>
+          </div>
+				
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
       <script src="js/vendor/bootstrap.min.js"></script>
       <script src="js/main.js"></script>
 		
-		<div class="collapse navbar-collapse navbar-fixed-top" id="bs-example-navbar-collapse-1 navbar-fixed-top">
-		  <div class="container-fluid" id="navbar">
-			<ul class="nav navbar-nav">
-			<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-			<li class="active"><a href="about.html">About Us <span class="sr-only">(current)</span></a></li>
-			<li class="active"><a href="products.html">Products <span class="sr-only">(current)</span></a></li>
-		  </ul>
-		</div>
-		</div>
+		
 	</body>
 </html>
